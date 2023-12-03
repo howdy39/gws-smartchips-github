@@ -1,8 +1,46 @@
 {
   "timeZone": "Asia/Tokyo",
-  "dependencies": {
-  },
   "exceptionLogging": "STACKDRIVER",
-  "runtimeVersion": "V8"
-
+  "oauthScopes": [
+    "https://www.googleapis.com/auth/workspace.linkpreview",
+    "https://www.googleapis.com/auth/script.external_request",
+    "https://www.googleapis.com/auth/spreadsheets"
+  ],
+  "urlFetchWhitelist": [
+    "https://api.github.com/"
+  ],
+  "runtimeVersion": "V8",
+  "dependencies": {
+    "libraries": [
+      {
+        "userSymbol": "GitHubAppToken",
+        "libraryId": "1S3DNbJEq91TAWt753wnEnDtUNcnWWBVSUl7_mNiyzi1rc9BwButo07xl",
+        "version": "1"
+      }
+    ]
+  },
+  "addOns": {
+    "common": {
+      "name": "gws-smartchips-github",
+      "logoUrl": "https://github.com/howdy39/gws-smartchips-github/assets/6329532/e4e495dd-0bc6-47ed-b92e-85083175ce96",
+      "layoutProperties": {
+        "primaryColor": "#469993"
+      }
+    },
+    "docs": {
+      "linkPreviewTriggers": [
+        {
+          "patterns": [
+            {
+              "hostPattern": "github.com",
+              "pathPrefix": "*"
+            }
+          ],
+          "runFunction": "linkPreview",
+          "labelText": "Issue or PR title",
+          "logoUrl": "https://github.com/howdy39/gws-smartchips-github/assets/6329532/e4e495dd-0bc6-47ed-b92e-85083175ce96"
+        }
+      ]
+    }
+  }
 }

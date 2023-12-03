@@ -1,5 +1,10 @@
-# gas-clasp-starter
-A starter template for Google Apps Script by [google/clasp](https://github.com/google/clasp)
+# gws-smartchips-github
+This is a Google Apps Script add-on that makes Smartchips in Google Workspace compatible with GitHub.
+
+https://developers.google.com/workspace/add-ons/guides/preview-links-smart-chips
+
+![CleanShot 2023-12-04 at 08 25 30](https://github.com/howdy39/gws-smartchips-github/assets/6329532/4b206685-94e6-4c61-9256-745a4b89ccdb)
+
 
 ## Tech Stack
 - [google/clasp](https://github.com/google/clasp)
@@ -53,9 +58,7 @@ The name, version, description, and homepage properties are output as comments a
 ```
 {
   "timeZone": "Asia/Tokyo", ## Change timeZone
-  "dependencies": {
-  },
-  "exceptionLogging": "STACKDRIVER"
+  ...
 }
 ```
 

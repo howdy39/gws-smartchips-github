@@ -1,14 +1,16 @@
 {
-  "name": "gas-clasp-starter",
-  "version": "2.0.0",
-  "description": "gas-clasp-starter project.",
-  "homepage": "https://github.com/howdy39/gas-clasp-starter",
+  "name": "gws-smartchips-github",
+  "version": "1.0.0",
+  "description": "This is a Google Apps Script add-on that makes Smartchips in Google Workspace compatible with GitHub.",
+  "homepage": "https://github.com/howdy39/gws-smartchips-github",
   "main": "build/index.js",
   "license": "MIT",
   "keywords": [
     "gas",
     "google-apps-script",
-    "clasp"
+    "clasp",
+    "google-smartchips",
+    "github"
   ],
   "scripts": {
     "clean": "rimraf dist",
@@ -22,6 +24,7 @@
     "node": ">=18"
   },
   "devDependencies": {
+    "@hankei6km/gas-github-app-token": "^0.1.0",
     "@types/google-apps-script": "^1.0.77",
     "@types/jest": "^29.5.7",
     "@typescript-eslint/eslint-plugin": "^6.10.0",
