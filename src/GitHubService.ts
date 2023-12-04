@@ -39,7 +39,7 @@ export class GitHubService {
     };
     const res = UrlFetchApp.fetch(url, params);
     const { title, body, user } = JSON.parse(res.getContentText());
-    return { title, body, userIconUrl: user.avatar_url };
+    return { title, body: body || '', userIconUrl: user.avatar_url };
   }
 
   static getPullRequest(
@@ -58,6 +58,6 @@ export class GitHubService {
     };
     const res = UrlFetchApp.fetch(url, params);
     const { title, body, user } = JSON.parse(res.getContentText());
-    return { title, body, userIconUrl: user.avatar_url };
+    return { title, body: body || '', userIconUrl: user.avatar_url };
   }
 }
