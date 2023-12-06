@@ -22,7 +22,7 @@
   "addOns": {
     "common": {
       "name": "gws-smartchips-github",
-      "logoUrl": "https://github.com/howdy39/gws-smartchips-github/assets/6329532/e4e495dd-0bc6-47ed-b92e-85083175ce96",
+      "logoUrl": "https://raw.githubusercontent.com/howdy39/gws-smartchips-github/main/github-mark.png",
       "layoutProperties": {
         "primaryColor": "#469993"
       }
@@ -38,7 +38,7 @@
           ],
           "runFunction": "linkPreview",
           "labelText": "Issue or PR title",
-          "logoUrl": "https://github.com/howdy39/gws-smartchips-github/assets/6329532/e4e495dd-0bc6-47ed-b92e-85083175ce96"
+          "logoUrl": "https://raw.githubusercontent.com/howdy39/gws-smartchips-github/main/github-mark.png"
         }
       ]
     }
